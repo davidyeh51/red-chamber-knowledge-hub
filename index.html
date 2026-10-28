@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>紅樓夢生活人文智庫 ✕ 麥肯錫結構化簡報系統</title>
+  <meta name="description" content="借紅樓照見人生，化經典為生活智慧。專為想將紅樓夢角色洞察應用於生活、提升人文素養與高情商領導力者設計的麥肯錫結構化知識庫。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-seal">紅</span>
+        <span>紅樓夢生活人文智庫</span>
+      </div>
+      <div class="nav-actions">
+        <a href="#modulesSection" class="btn btn-outline">📚 瀏覽模組</a>
+        <a href="#lifeApplicationSection" class="btn btn-outline">🌿 生活應用</a>
+        <a href="presentation.html#slide-01" class="btn btn-primary">
+          🖥 打開 16:9 簡報系統
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span>🏛️ 得到 App 董梅講透紅樓夢 ✕ 麥肯錫顧問結構化智庫</span>
+      </div>
+      <h1 class="hero-title">借紅樓照見人生，化經典為生活智慧</h1>
+      <p class="hero-subtitle">
+        專為「想讓紅樓夢的角色、觀察應用於生活，增加人文素質」的現代人打造。
+        運用麥肯錫金字塔原理，重構 34 講精粹內容，提煉出兼具深情、靈性與悲憫的高情商生活實踐指南。
+      </p>
+
+      <!-- Key Statistics Dashboard -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num">34</div>
+          <div class="stat-label">篇權威經典精講 (全收錄)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6</div>
+          <div class="stat-label">大麥肯錫結構模組</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">136+</div>
+          <div class="stat-label">項人生難題解答與洞察</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">行動結論先行 (Pyramid Deck)</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Real-time Global Search & Filter Bar -->
+  <div class="search-bar-wrap">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="globalSearchInput" class="search-input" placeholder="輸入關鍵字查找：如「王熙鳳」、「管理」、「飲食」、「正邪兩賦」、「大觀園」..." autocomplete="off">
+      <span class="search-hotkey">Ctrl + K</span>
+    </div>
+    <div class="search-tags">
+      <span style="font-size: 0.8rem; color: #6c757d; align-self: center; margin-right: 0.25rem;">熱門標籤：</span>
+      <button class="tag-btn" data-tag="生活美學">生活美學</button>
+      <button class="tag-btn" data-tag="管理">管理領導</button>
+      <button class="tag-btn" data-tag="正邪兩賦">正邪兩賦</button>
+      <button class="tag-btn" data-tag="王熙鳳">王熙鳳</button>
+      <button class="tag-btn" data-tag="探春">探春</button>
+      <button class="tag-btn" data-tag="林黛玉">林黛玉</button>
+      <button class="tag-btn" data-tag="薛寶釵">薛寶釵</button>
+      <button class="tag-btn" data-tag="飲食">飲食文化</button>
+      <button class="tag-btn" data-tag="儒道釋">儒道釋價值觀</button>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- Search Results Section (Dynamically displayed when searching) -->
+    <section id="searchResultsSection" class="search-results-section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">🔍 檢索結果</h2>
+          <span id="searchQueryBadge" class="section-subtitle"></span>
+        </div>
+        <span id="searchResultCount" style="font-size: 0.88rem; font-weight: 700; color: var(--primary-red);"></span>
+      </div>
+      <div id="searchResultsContainer"></div>
+    </section>
+
+    <!-- Four Life Pillars Matrix -->
+    <section id="lifeApplicationSection" style="margin-bottom: 4rem;">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">🌿 紅樓人文素養 ✕ 現代生活四大支柱</h2>
+          <span class="section-subtitle">將曹雪芹筆下的人性觀察轉化為現代人的生命修養與處世心法</span>
+        </div>
+      </div>
+
+      <div class="pillar-grid">
+        <div class="pillar-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">💼</div>
+          <h3 class="pillar-title">職場領導與變革管理</h3>
+          <p class="pillar-desc">
+            對照王熙鳳的威權微觀監控與探春的承包造血制度；審視賈府現金流崩塌警鐘，學習在組織中如何破除既得利益阻力推動制度革新。
+          </p>
+          <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--primary-red); font-weight: 600;">
+            代表課程：#25 破產審計 · #26 探春理家 · #27 關係高手
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🤝</div>
+          <h3 class="pillar-title">人際關係與情商修煉</h3>
+          <p class="pillar-desc">
+            以「正邪兩賦論」破除道德非黑即白的苛責，學會「見人之長、諒人之短」；看懂他人刺蝟外殼下的生命創傷，建立深度同理心。
+          </p>
+          <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--primary-red); font-weight: 600;">
+            代表課程：#21 正邪兩賦 · #12 襲人體制困境 · 直播大課①
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🍵</div>
+          <h3 class="pillar-title">日常美學與生活儀式感</h3>
+          <p class="pillar-desc">
+            融會王熙鳳的物質本事、賈母的審美品位與林黛玉的天然詩性；透過四時節令、飲食正念、家居借景與器物雅玩，在快節奏中找回生活質感。
+          </p>
+          <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--primary-red); font-weight: 600;">
+            代表課程：#03 第一流生活家 · #05 飲食境界 · #08 歲時節令
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🧘</div>
+          <h3 class="pillar-title">心靈覺察與生命悲憫</h3>
+          <p class="pillar-desc">
+            體悟「因空見色，自色悟空」的深層智慧：知曉世事無常終將歸空，依然選擇深情以赴；融通儒之深情、道之靈性與佛之悲憫。
+          </p>
+          <div style="margin-top: 0.75rem; font-size: 0.8rem; color: var(--primary-red); font-weight: 600;">
+            代表課程：#15 紅樓之夢 · #18 風月寶鑑 · 直播大課②
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Six Knowledge Modules Section -->
+    <section id="modulesSection">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">📚 麥肯錫六大結構化知識模組</h2>
+          <span class="section-subtitle">點擊各單元可即時預覽精華筆記，或一鍵直達 16:9 簡報進行演講與研讀</span>
+        </div>
+        <a href="presentation.html#slide-01" class="btn btn-outline" style="font-size: 0.85rem;">
+          🖥 總覽全套 34 頁簡報
+        </a>
+      </div>
+
+      <div class="module-grid">
+        
+      <div class="module-card">
+        <div class="module-header">
+          <span class="module-badge" style="background: #9b222615; color: #9b2226;">架構總覽</span>
+          <span style="font-size: 0.8rem; color: #868e96;">共 6 講</span>
+        </div>
+        <h3 class="module-title">宏觀骨架與時空導引</h3>
+        <p class="module-desc">以神話預言為形上起點，以十五年興衰為時間座標，以大觀園為心靈宇宙，奠定全書儒道釋精神底座。</p>
+        <div class="module-lessons-list">
+          
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_01')">
+            <span><strong>#01</strong> 發刊詞：拿下中國文化高峰</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_02')">
+            <span><strong>#02</strong> 01 時間軸：小說講了什麼故事</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_03')">
+            <span><strong>#03</strong> 02 空間線：賈府到底有多大</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_10')">
+            <span><strong>#10</strong> 09 前兩回：神話與形上起點</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_15')">
+            <span><strong>#15</strong> 14 後四十回：斷臂維納斯與結構擺渡</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_16')">
+            <span><strong>#16</strong> 15 究竟是什麼夢：因空見色與深情以待</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+        </div>
+        <div class="module-footer">
+          <span style="font-size: 0.8rem; color: #868e96;">模組 #0</span>
+          <a href="presentation.html#slide-01" class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size: 0.82rem;">
+            🖥 進入本模組簡報
+          </a>
+        </div>
+      </div>
+    
+      <div class="module-card">
+        <div class="module-header">
+          <span class="module-badge" style="background: #ae201215; color: #ae2012;">生活美學</span>
+          <span style="font-size: 0.8rem; color: #868e96;">共 6 講</span>
+        </div>
+        <h3 class="module-title">中式生活美學與日常修煉</h3>
+        <p class="module-desc">從服飾風格、飲食境界到家居佈置、器物雅玩與四時節令，提煉物質生活與精神靈性合一的生活家境界。</p>
+        <div class="module-lessons-list">
+          
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_04')">
+            <span><strong>#04</strong> 03 誰是第一流的生活家</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_05')">
+            <span><strong>#05</strong> 04 衣服哲學：流動的人格符號</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_06')">
+            <span><strong>#06</strong> 05 飲食境界：舌尖與心靈的修煉</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_07')">
+            <span><strong>#07</strong> 06 中式家居：空間與光影氣韻</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_08')">
+            <span><strong>#08</strong> 07 器物雅玩：物我兩忘的生活情趣</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_09')">
+            <span><strong>#09</strong> 08 歲時節令：四時節奏與儀式感</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+        </div>
+        <div class="module-footer">
+          <span style="font-size: 0.8rem; color: #868e96;">模組 #1</span>
+          <a href="presentation.html#slide-04" class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size: 0.82rem;">
+            🖥 進入本模組簡報
+          </a>
+        </div>
+      </div>
+    
+      <div class="module-card">
+        <div class="module-header">
+          <span class="module-badge" style="background: #bb3e0315; color: #bb3e03;">象徵密碼</span>
+          <span style="font-size: 0.8rem; color: #868e96;">共 5 講</span>
+        </div>
+        <h3 class="module-title">象徵符號密碼與隱性結構</h3>
+        <p class="module-desc">破譯曹雪芹在人名諧音、大觀園芭蕉、風月寶鑑、四書真義與神石靈性中深埋的東方文化密碼網。</p>
+        <div class="module-lessons-list">
+          
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_17')">
+            <span><strong>#17</strong> 16 人名謎題：諧音隱喻與命運密碼</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_18')">
+            <span><strong>#18</strong> 17 芭蕉密碼：佛學無常與深情</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_19')">
+            <span><strong>#19</strong> 18 風月寶鑑：慾望鏡像與真相覺醒</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_20')">
+            <span><strong>#20</strong> 19 寶玉不燒四書：真儒初心與教條批判</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_21')">
+            <span><strong>#21</strong> 20 林黛玉與孫悟空：頑石心性與不妥協</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+        </div>
+        <div class="module-footer">
+          <span style="font-size: 0.8rem; color: #868e96;">模組 #2</span>
+          <a href="presentation.html#slide-17" class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size: 0.82rem;">
+            🖥 進入本模組簡報
+          </a>
+        </div>
+      </div>
+    
+      <div class="module-card">
+        <div class="module-header">
+          <span class="module-badge" style="background: #ca670215; color: #ca6702;">人性哲學</span>
+          <span style="font-size: 0.8rem; color: #868e96;">共 7 講</span>
+        </div>
+        <h3 class="module-title">人性哲學與角色透視</h3>
+        <p class="module-desc">以「正邪兩賦論」破除二元對立道德審判，透析寶黛釵、襲人、晴雯等人的生命之痛與深層同理。</p>
+        <div class="module-lessons-list">
+          
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_11')">
+            <span><strong>#11</strong> 10 寶玉定位：非典型男主的守護與見證</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_12')">
+            <span><strong>#12</strong> 11 寶黛雙峰：深情理想 vs 現實理性</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_13')">
+            <span><strong>#13</strong> 12 襲人爭議：底層理性與體制困境</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_14')">
+            <span><strong>#14</strong> 13 詩詞歌賦：心靈投射與微縮檔案</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_22')">
+            <span><strong>#22</strong> 21 正邪兩賦：見人之長與諒人之短</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_23')">
+            <span><strong>#23</strong> 22 女性崇拜：女兒光芒與性別平視</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_25')">
+            <span><strong>#25</strong> 24 荒唐言辛酸淚：創傷療癒與大悲憫</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+        </div>
+        <div class="module-footer">
+          <span style="font-size: 0.8rem; color: #868e96;">模組 #3</span>
+          <a href="presentation.html#slide-11" class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size: 0.82rem;">
+            🖥 進入本模組簡報
+          </a>
+        </div>
+      </div>
+    
+      <div class="module-card">
+        <div class="module-header">
+          <span class="module-badge" style="background: #0a939615; color: #0a9396;">管理領導</span>
+          <span style="font-size: 0.8rem; color: #868e96;">共 7 講</span>
+        </div>
+        <h3 class="module-title">組織社會學與現代管理</h3>
+        <p class="module-desc">剖析豪門破產財報、二代傳承危機、王熙鳳威權管理 vs 探春變革承包、人際關係佈局與百態生態。</p>
+        <div class="module-lessons-list">
+          
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_24')">
+            <span><strong>#24</strong> 23 賈府男人：傳承斷層與富貴警鐘</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_26')">
+            <span><strong>#26</strong> 25 賈府破產：現金流斷裂與財務審計</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_27')">
+            <span><strong>#27</strong> 26 探春vs王熙鳳：威權立威 vs 變革造血</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_28')">
+            <span><strong>#28</strong> 27 關係高手：關鍵站位與深層佈局</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_29')">
+            <span><strong>#29</strong> 28 百工百態：跨界洞察與人間體察</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_30')">
+            <span><strong>#30</strong> 29 經典三大問：求真思辨與文本底色</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_31')">
+            <span><strong>#31</strong> 30 紅樓宇宙：文化母體與現代轉譯</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+        </div>
+        <div class="module-footer">
+          <span style="font-size: 0.8rem; color: #868e96;">模組 #4</span>
+          <a href="presentation.html#slide-24" class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size: 0.82rem;">
+            🖥 進入本模組簡報
+          </a>
+        </div>
+      </div>
+    
+      <div class="module-card">
+        <div class="module-header">
+          <span class="module-badge" style="background: #005f7315; color: #005f73;">深度大課</span>
+          <span style="font-size: 0.8rem; color: #868e96;">共 3 講</span>
+        </div>
+        <h3 class="module-title">大師講堂與直播深研</h3>
+        <p class="module-desc">董梅老師三場核心直播全紀錄：正邪兩賦深度大課、儒道釋三足鼎立內在價值觀、時空立體交織復盤。</p>
+        <div class="module-lessons-list">
+          
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_32')">
+            <span><strong>#32</strong> 直播大課：角色的正邪兩賦</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_33')">
+            <span><strong>#33</strong> 直播大課：三教融通精神底座</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+          <div class="module-lesson-item" onclick="openLessonModal('lesson_34')">
+            <span><strong>#34</strong> 直播大課：時空立體交織復盤</span>
+            <span style="font-size: 0.75rem; color: #868e96;">📖 閱讀</span>
+          </div>
+        
+        </div>
+        <div class="module-footer">
+          <span style="font-size: 0.8rem; color: #868e96;">模組 #5</span>
+          <a href="presentation.html#slide-32" class="btn btn-primary" style="padding: 0.3rem 0.75rem; font-size: 0.82rem;">
+            🖥 進入本模組簡報
+          </a>
+        </div>
+      </div>
+    
+      </div>
+    </section>
+
+    <!-- Extensible Architecture Guide -->
+    <section style="background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-light); padding: 2rem; margin-top: 2rem; box-shadow: var(--shadow-sm);">
+      <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--dark-slate); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+        <span>🛠️</span> 預留擴充架構說明 (Extensible Architecture)
+      </h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+        本智庫採用標準化<strong>數據驅動 (Data-Driven) 模組化架構</strong>，完全解耦資料與表現層。未來無論新增專題簡報、角色分析卡片或延伸影音筆記，只需遵循三步驟 SOP：
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; font-size: 0.85rem;">
+        <div style="background: #f8f9fa; padding: 1rem; border-radius: var(--radius-md); border-left: 3px solid var(--primary-red);">
+          <strong>1. 結構化資料庫 (data/courses.json)</strong><br>
+          在對應模組中追加章節中繼資料、麥肯錫行動結論標題、三項洞察與講稿備忘錄。
+        </div>
+        <div style="background: #f8f9fa; padding: 1rem; border-radius: var(--radius-md); border-left: 3px solid var(--accent-gold);">
+          <strong>2. 全域搜尋索引 (data/search-index.json)</strong><br>
+          新增反向檢索標籤與人物關鍵字，前端即時檢索引擎即刻自動支援模糊搜尋與高亮。
+        </div>
+        <div style="background: #f8f9fa; padding: 1rem; border-radius: var(--radius-md); border-left: 3px solid #0a9396;">
+          <strong>3. 簡報自動渲染 (presentation.html)</strong><br>
+          簡報引擎動態讀取 JSON 渲染 16:9 頁面，無縫支援鍵盤切換、講稿抽屜與列印匯出。
+        </div>
+      </div>
+      <div style="margin-top: 1.25rem; text-align: right;">
+        <a href="docs/EXPANSION.md" target="_blank" style="font-size: 0.85rem; font-weight: 600;">📖 詳閱 docs/EXPANSION.md 擴充手冊 →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Reader (Fast reading drawer) -->
+  <div id="lessonModalBackdrop" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="modalLessonTitle" class="modal-title">課程詳情</h3>
+        <button class="modal-close" onclick="closeLessonModal()">&times;</button>
+      </div>
+      <div id="modalLessonBody" class="modal-body">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          紅樓夢生活人文智庫 ✕ 麥肯錫結構化簡報系統
+        </div>
+        <div>
+          <a href="presentation.html#slide-01" class="btn btn-primary" style="font-size: 0.85rem;">🖥 啟動 16:9 簡報演示</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          經典來源：得到 App 董梅講透紅樓夢（中央美院人文學院古典文學學者）<br>
+          架構設計：麥肯錫顧問風格結構化工程智庫 (Pyramid Principle)
+        </div>
+        <div>
+          託管維護：GitHub Pages 靜態安全託管 · 2026
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/search.js"></script>
+</body>
+</html>
